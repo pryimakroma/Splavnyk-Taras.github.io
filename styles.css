@@ -1,0 +1,91 @@
+.inline {
+  display: flex;
+}
+.image {
+  width: 200px;
+  height: 300px;
+}
+.btn {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  background: #4285f4;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #4285f4;
+}
+.btn:hover {
+  color: #4285f4;
+  background: #fff;
+  border: 1px solid #4285f4;
+}
+span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.menu-main {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+
+  background: white;
+}
+#portfolio {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu-main li {
+  display: inline-block;
+}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 30px;
+  font-family: "PT Sans Caption", sans-serif;
+  color: #777777;
+  transition: 0.3s linear;
+}
+p {
+  padding: 0;
+}
+
+.menu-main a:hover {
+  color: #f58262;
+}
+
+.struct {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.column-reverse ol {
+  list-style: none;
+  counter-reset: li;
+}
+.column-reverse li:before {
+  counter-increment: li;
+
+  content: counters(li, ".") ". ";
+}
+.column-reverse ol {
+  display: flex;
+  flex-direction: column-reverse;
+}
